@@ -1,0 +1,27 @@
+
+.second__container{
+    background-color: #f0f0f0;
+    color: black;
+}
+.second__container > h1{
+    padding-left: 45px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.product__image{
+    width: 200px;
+    object-fit: contain;
+    height: 200px;
+}
+.product__image__container{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.product__container{
+    column-gap: 20px;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+}

@@ -1,0 +1,123 @@
+.header__container{
+  display: flex;
+  margin: 10px 20%;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.header__container > a , nav > a {
+  text-decoration: none;
+  font-size: 30px;
+}
+.header__container > nav{
+  display: flex;
+  column-gap: 40px;
+  font-weight: 600;
+}
+.display__container{
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.trash{
+  text-decoration: none;
+  color: inherit;
+}
+.blog__content{
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  /* align-items: center; */
+
+}
+.blog__image{
+display: flex;
+  justify-content: flex-end;
+  /* border: 2px solid red; */
+  width: 35%;
+  padding: 20px;
+}
+.blog__image > img{
+  
+  width: 280px;
+  height: 80%;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.blog__text{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* border: 2px solid red; */
+  padding: 20px;
+}
+.blog__text > h1{
+  font-size: 1.8rem;
+  /* text-align: left; */
+  display: flex;
+  width: 80%;
+  line-height: 1.8rem;
+}
+.blog__text > span {
+   width: 80%;
+   /* text-align: left; */
+   display: flex;
+}
+.blog__info{
+  display: flex;
+  justify-content: flex-start;align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.author{
+  text-decoration: none;
+  cursor: pointer;
+}
+.no__blog{
+  margin: auto;
+  display: block;
+  width: fit-content;
+  font-weight: 900;
+  font-size: x-large;
+}
+@media screen and (max-width: 698px){
+  .blog__text > h1{
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+  .blog__text > span{
+    width: 100%;
+  }
+  .blog__image{
+    width: 40%;
+  }
+  .blog__text{
+    width: 60%;
+    margin-right: 20px;
+  }
+  .blog__image > img{
+    width: 150px;
+  }
+
+}
+@media screen and (max-width:560px){
+.blog__content {
+  flex-direction: column;
+  align-items: center;
+  
+}
+.blog__image{
+  width: 100%;
+  justify-content: center;
+}
+.blog__image > img{
+  width: 80%;
+  height: 200px;
+}
+.blog__text{
+  width: 100%;
+  margin-right: 0px;
+  margin: auto;
+}
+}

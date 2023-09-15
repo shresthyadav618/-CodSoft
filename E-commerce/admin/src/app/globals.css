@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+input,textarea,select{
+  --tw-bg-opacity: 1;
+    border: 2px solid rgb(30 58 138 / var(--tw-bg-opacity));
+    color: black!important;
+    padding: 10px!important;
+    border-radius: 5px!important;
+}
+textarea{
+  height: 200px;
+}
+label{
+  --tw-bg-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-bg-opacity));
+    padding-left: 10px!important;
+    font-weight: bold;
+    font-size: large;
+}
+
+input::placeholder,textarea::placeholder{
+  --tw-bg-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-bg-opacity))!important;
+
+}
+button,.btn{
+  --tw-bg-opacity: 1;
+    background-color: rgb(30 58 138 / var(--tw-bg-opacity))!important;
+    color: white!important;
+    padding: 10px!important;
+    border-radius: 5px!important;
+    width: fit-content;
+}
+.basic tr td{
+  border: 1px solid black;
+  padding: 5px;
+}
+.basic thead{
+  background-color: antiquewhite;
+  color: black;
+  padding: 5px;
+  width: 100%;
+}
+.uploaded__images > div >  img{
+  width: 60px;
+  object-fit: contain;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.uploaded__images > div {
+   display: flex;
+   column-gap: 10px;
+}
+.uploaded__images{
+  margin-left: 10px;
+  
+}

@@ -1,0 +1,6 @@
+.cart__container > div{
+    min-height: 200px;
+}
+.product__image__container{
+    margin-top: 20px !important;
+}

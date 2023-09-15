@@ -1,0 +1,41 @@
+
+.login__container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login__container > h1{
+    font-size: 3rem;
+}
+
+.input__form{
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+.input__form > input{
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+width: 50%;
+margin: auto;
+}
+.input__form > button{
+    width: 52%;
+    margin: auto;
+    padding: 15px;
+    border: none;
+    background-color: darkgray;
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+}
+.input__form > button:hover{
+    background-color: gray;
+}
